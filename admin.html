@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,37 +32,20 @@
                             </li>
                             <li>
                                 <span class="avatarsmall">
-
-
                                         <img src="img/avtbg.jpg" alt>
-
-
                                     </span>
                             </li>
-
-
                         </ul>
                     </nav>
-
-
                 </div>
                 <div class="burghermenu"></div>
-
-
-
             </div>
-
-
         </header>
         <div class="innerwrapper">
             <div class="sidebar">
-
-
                 <div class="card" style="margin-top: 0px;">
                     <div class="issueheading">Red Flags</div>
                     <div class="stats">
-
-
                         <div class="statheader1">
                             Resolved
                             <div class="statnumbrs" style="color:greenyellow;">
@@ -80,20 +62,14 @@
                                 150
                             </div>
                         </div>
-
-
                     </div>
                     <div class="viewall">
-                        <a href="#">View All</a>
+                        <a href="#" class="allrecords" data="Red Flags">View All</a>
                     </div>
                 </div>
-
-
                 <div class="card" style="margin-top: 15px;">
                     <div class="issueheading">Intervention Records</div>
                     <div class="stats">
-
-
                         <div class="statheader1">
                             Resolved
                             <div class="statnumbrs" style="color:greenyellow">
@@ -110,20 +86,14 @@
                                 100
                             </div>
                         </div>
-
-
                     </div>
                     <div class="viewall">
-                        <a href="#">View All</a>
+                        <a href="#" class="allrecords" data="Intervention Records">View All</a>
                     </div>
-
-
                 </div>
             </div>
             <div class="contentarea">
                 <div class="siteheading">All Red Flags</div>
-
-
                 <div class="card">
                     <div class="issueheading">Title</div>
                     <span class="theauthor">By Dennis K.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat necessitatibus consectetur eos est, consequatur, quos ad omnis ex a explicabo illum aut eaque autem! In dolor voluptatibus
@@ -136,13 +106,15 @@
 
                         <span class="dates">2hrs ago</span>
                         <div class="actions">
-                            <ul>
-                                <li>
-                                    <a href="#">update status</a>
-                                </li>
 
-
-                            </ul>
+                            <div class="tooltip">
+                                <a href="#">update status</a>
+                                <span class="tooltiptext">
+                                        <div><a href="#0" class="status">Rejected</a></div>
+                                        <div><a href="#0" class="status">Resolved</a></div>
+                                        <div><a href="#0" class="status">Under Investigation</a></div>
+                                    </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -163,14 +135,14 @@
 
                         <span class="dates">2months ago</span>
                         <div class="actions">
-                            <ul>
-                                <li>
-                                    <a href="#" style="color: red;">
-                                            Rejected
-                                        </a>
-                                </li>
-
-
+                            <div class="tooltip">
+                                <a href="#" style="color: red">Rejected</a>
+                                <span class="tooltiptext">
+                                        <div><a href="#0" class="status">Rejected</a></div>
+                                        <div><a href="#0" class="status">Resolved</a></div>
+                                        <div><a href="#0" class="status">Under Investigation</a></div>
+                                    </span>
+                            </div>
                             </ul>
                         </div>
                     </div>
@@ -192,15 +164,14 @@
 
                         <span class="dates">4months ago</span>
                         <div class="actions">
-                            <ul>
-                                <li>
-                                    <a href="#" style="color: blue">
-                                            Pending
-                                        </a>
-                                </li>
-
-
-                            </ul>
+                            <div class="tooltip">
+                                <a href="#" style="color: blue">Under Investigation</a>
+                                <span class="tooltiptext">
+                                        <div><a href="#0" class="status">Rejected</a></div>
+                                        <div><a href="#0" class="status">Resolved</a></div>
+                                        <div><a href="#0" class="status">Under Investigation</a></div>
+                                    </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -219,13 +190,14 @@
 
                         <span class="dates">1yr ago</span>
                         <div class="actions">
-                            <ul>
-                                <li>
-                                    <a href="#">update status</a>
-                                </li>
-
-
-                            </ul>
+                            <div class="tooltip">
+                                <a href="#">update status</a>
+                                <span class="tooltiptext">
+                                        <div><a href="#0" class="status">Rejected</a></div>
+                                        <div><a href="#0" class="status">Resolved</a></div>
+                                        <div><a href="#0" class="status">Under Investigation</a></div>
+                                    </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -240,35 +212,26 @@
                     ex.Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat necessitatibus consectetur eos est, consequatur, quos ad omnis ex a explicabo illum aut eaque autem! In dolor voluptatibus excepturi ex.Lorem ipsum dolor sit
                     amet consectetur adipisicing elit. Porro repellat necessitatibus consectetur eos est, consequatur, quos ad omnis ex a explicabo illum aut eaque autem! In dolor voluptatibus excepturi ex.
                     <div class="adminactions">
-
-
-
                         <span class="dates">2 yrs ago</span>
                         <div class="actions">
-                            <ul>
-                                <li>
-                                    <a href="#" style="color: greenyellow;">
-                                            Resolved
-                                        </a>
-                                </li>
-
-
-                            </ul>
+                            <div class="tooltip">
+                                <a href="#" style="color: yellowgreen">Resolved</a>
+                                <span class="tooltiptext">
+                                        <div><a href="#0" class="status">Rejected</a></div>
+                                        <div><a href="#0" class="status">Resolved</a></div>
+                                        <div><a href="#0" class="status">Under Investigation</a></div>
+                                    </span>
+                            </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     </div>
     <footer>
         <div class="footercontainer">&copycopyright iReporter 2018</div>
     </footer>
+    <script src="js/adminscripts.js"></script>
 </body>
-
 
 </html>
