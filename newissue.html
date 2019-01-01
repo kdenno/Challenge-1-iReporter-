@@ -55,12 +55,22 @@
                             <div>
                                 <select name="issuetype">
                                         <option value="Red Flag">Red Flag</option>
+                                        <div class="siteheading">New Incident</div>
                                         <option value="Intervention Record">Intervention Record</option>
 
                                     </select>
                             </div>
+                            <div style="margin-bottom: 15px;">
+                                <div class="siteheading">Incident Location</div>
+                                <div class="stats">
+                                    <div class="locateme">Locate me</div>
+                                    <div class="frommap">Select from map</div>
+                                </div>
+                            </div>
+                            <div class="maploader">Loading Map...</div>
+
                             <div>
-                                <textarea name="description" rows="10" placeholder="description"></textarea>
+                                <textarea name="description" rows="10" placeholder="Describe incident"></textarea>
 
                             </div>
                             <div>
@@ -83,6 +93,8 @@
 
         </div>
     </footer>
+    <script src="js/UI.js"></script>
+    <script src="js/userscripts.js"></script>
 </body>
 
 </html>

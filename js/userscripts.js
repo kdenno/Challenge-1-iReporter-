@@ -14,6 +14,11 @@
                     ui.closeOverlay();
                     break;
 
+                case 'frommap':
+                    console.log('clicked')
+                    ui.loadMap();
+                    break;
+
                 case 'update':
                     e.preventDefault();
                     ui.ShowUpdate();
