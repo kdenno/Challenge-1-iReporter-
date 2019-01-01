@@ -393,7 +393,9 @@ footer {
 }
 
 .formswrapper {
-    margin-top: 100px;
+    margin: 20px 0;
+    height: calc(100vh - 50px);
+    overflow-y: scroll
 }
 
 .formswrapperinner {
@@ -406,6 +408,10 @@ footer {
     border-radius: 30px;
     padding: 40px 10px;
     position: relative;
+}
+
+.formswrapperinner form {
+    height: auto;
 }
 
 .formswrapperinner input {
@@ -445,8 +451,39 @@ footer {
     font-weight: bold;
 }
 
-.viewall {
-    text-align: right;
+.locateme {
+    padding: 10px;
+    margin-right: 5px;
+    text-align: center;
+    flex: 1;
+    border: solid 1px rgb(7, 187, 7);
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block
+}
+
+.frommap {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    flex: 1;
+    display: inline-block;
+    border: solid 1px #0084b4;
+    border-radius: 5px;
+}
+
+.maploader {
+    height: 0px;
+    text-align: center;
+    padding-top: 30px;
+    transition: height .4s;
+}
+
+.maploader.loadmap {
+    height: 230px;
+    border: solid 1px #e6e6e7;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 
