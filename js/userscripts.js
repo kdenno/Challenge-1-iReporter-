@@ -1,25 +1,39 @@
-        // show overlay
-        let editlinks = document.querySelectorAll('.editpost');
-        editlinks.forEach(element => {
-            element.addEventListener('click', (e) => {
+        // show overlay    
+        let postTitle;
+        let postContent;
+        let overlaydiv = document.querySelector('.irepoverlay');
+        document.addEventListener('click', (e) => {
+            if (e.target.className === 'editpost') {
+
                 e.preventDefault();
-                let postTitle = (e.target.parentElement.parentElement.parentElement.parentElement.children[0].innerText);
-                let postContent = (e.target.parentElement.parentElement.parentElement.parentElement.children[1].innerText);
+
+                postTitle = (e.target.parentElement.parentElement.parentElement.parentElement.children[0]);
+                postContent = (e.target.parentElement.parentElement.parentElement.parentElement.children[1]);
                 // update text field
-                document.querySelector('#editpost_input').setAttribute('value', postTitle);
+                document.querySelector('#editpost_input').value = postTitle.innerText;
                 // update text area
-                document.querySelector('#editpost_textarea').value = postContent;
+                document.querySelector('#editpost_textarea').value = postContent.innerText;
 
 
-                let overlaydiv = document.querySelector('.irepoverlay');
                 let newclass = overlaydiv.className + ' is-visible';
                 overlaydiv.setAttribute('class', newclass)
-            });
+            }
+
         });
+        // show update
+        document.getElementById('update').addEventListener('click', (e) => {
+            e.preventDefault();
+            // update
+            postTitle.innerText = '';
+            postTitle.innerText = document.querySelector('#editpost_input').value
+            postContent.innerText = document.querySelector('#editpost_textarea').value
+            overlaydiv.setAttribute('class', 'irepoverlay')
+
+        });
+
 
         // close overlay
         document.querySelector('.closeoverlay').addEventListener('click', () => {
-            let overlaydiv = document.querySelector('.irepoverlay');
             overlaydiv.setAttribute('class', 'irepoverlay')
         });
         // delete post 
