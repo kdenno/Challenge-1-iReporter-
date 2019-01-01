@@ -1,9 +1,9 @@
 # iReporter #
-iReporter enables any/every citizen to bring any form of corruption to the notice of appropriate authorities and the general public.
+Corruption is a huge bane to Africa’s development. iReporter is a solution that will help to curb this menace by enabling any/every citizen to bring any form of corruption to the notice of appropriate authorities and the general public.
 
 
 
-## Languages ##
+## Languages used ##
 * HTML
 * CSS
 * Javascript
